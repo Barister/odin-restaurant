@@ -6,6 +6,7 @@ module.exports = {
    plugins: [
       new HtmlWebpackPlugin({
          title: 'The Odin Restaurant',
+         template: './src/index.html',
       }),
    ],
    output: {
