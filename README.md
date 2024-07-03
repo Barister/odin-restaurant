@@ -1,3 +1,3 @@
-### The Odin Restaurant
+# The Odin Restaurant
 
-# The Full Stack Curriculum Project to try webpack
+### The Full Stack Curriculum Project to try Webpack
