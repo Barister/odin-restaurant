@@ -1,4 +1,4 @@
-import './style.css';
+import '../src/css/style.css';
 
 function component() {
    const element = document.createElement('div');
@@ -9,4 +9,4 @@ function component() {
    return element;
 }
 
-document.body.appendChild(component());
+//document.body.appendChild(component());

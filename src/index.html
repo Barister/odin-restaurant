@@ -10,40 +10,69 @@
 <body>
 
    <div class="wrapper">
-      <header class="page__header header-page">
-         <div class="header-page__container">
-            <nav class="header-page__menu menu">
-               <ul class="header-page__menu-list menu-list">
-                  <li class="header-page__menu-item menu-item">
+      <div class="wrapper__background-image">
+         <img src="../src/img/bg.png" alt="">
+      </div>
+      <header class="page__header header">
+         <div class="header__container">
+            <div class="header__logo logo">
+               <img src="../src/img/logo.svg" alt="">
+            </div>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item menu__item--active">
                      <button>Home</button>
                   </li>
-                  <li class="header-page__menu-item menu-item">
+                  <li class="menu__item">
                      <button>Menu</button>
                   </li>
-                  <li class="header-page__menu-item menu-item">
+                  <li class="menu__item">
                      <button>About</button>
                   </li>
                </ul>
             </nav>
+            <div class="header-page__panel panel">
+               <ul class="panel__list">
+                  <li class="panel__item">
+                     <a href="" class="">
+                        <img src="../src/img/zoom.svg" alt="">
+                     </a>
+                  </li>
+                  <li class="panel__item">
+                     <a href="" class="">
+                        <img src="../src/img/user.svg" alt="">
+                     </a>
+                  </li>
+                  <li class="panel__item">
+                     <a href="" class="">
+                        <img src="../src/img/tote.svg" alt="">
+                     </a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </header>
       <div id="content">
          <main class="page">
-            <section class="page__hero hero-page">
-               <div class="hero-page__container">
-                  <div class="hero-page__row">
-                     <div class="hero-page__description">
-                        <h3 class="hero-page__subtitle">Healthy & Testy Food</h3>
-                        <h1 class="hero-page__title">Enjoy Healthy Life
+
+            <section class="page__hero hero">
+
+               <div class="hero__container">
+                  <div class="hero__row">
+                     <div class="hero__description">
+                        <h3 class="hero__pretitle pretitle">Healthy & Testy Food</h3>
+                        <h1 class="hero__title title">Enjoy Healthy Life
                            & Testy Food.</h1>
-                        <p class="hero-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            Varius sed pharetra dictum neque massa congue</p>
-                        <div class="hero-page__call-to-action">
-                           <a href="" class="hero-page__more btn">Show more</a>
-                           <button class="hero-page__order btn">Place an order</button>
+                        <div class="hero__call-to-action">
+                           <a href="" class="hero__more btn">Show more</a>
+                           <button class="hero__order btn">Place an order</button>
                         </div>
                      </div>
-                     <div class="hero-page__images"></div>
+                     <div class="hero__image">
+                        <img src="../src/img/hero-image.png" alt="">
+                     </div>
                   </div>
                </div>
             </section>
