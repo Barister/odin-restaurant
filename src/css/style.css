@@ -82,14 +82,24 @@ body.scroll-lock {
   font-size: 18px;
   line-height: 144%;
   color: #195a00;
+  position: relative;
+}
+.pretitle::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  border-radius: 6px;
+  height: 1px;
+  background-color: #195a00;
+  bottom: 1ch;
+  transform: translateY(50%);
+  margin-left: 29px;
 }
 
 .title {
-  max-width: 100%;
-  white-space: wrap;
   font-size: clamp(2.8rem, 10vw - 2rem, 60px);
-  text-transform: uppercase;
-  line-height: 100%;
+  line-height: 113%;
+  font-weight: 700;
   position: relative;
 }
 
@@ -102,9 +112,22 @@ body.scroll-lock {
 }
 
 .btn {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
   padding: clamp(8px, 6vw, 16px) clamp(16px, 6vw, 48px);
   border: 1px solid #195a00;
   border-radius: 6px;
+  text-wrap: nowrap;
+}
+.btn--primary-color {
+  background-color: #195a00;
+  color: #fff;
+}
+.btn--transparent-color {
+  background-color: #fff;
+  color: #195a00;
 }
 
 .page {
@@ -184,4 +207,30 @@ body.scroll-lock {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+}
+.hero__pretitle {
+  margin-bottom: 8px;
+}
+.hero__title {
+  position: relative;
+  margin-bottom: 32px;
+}
+.hero__title::after {
+  content: "";
+  position: absolute;
+  background: url("../img/shining-stars.svg") no-repeat;
+  width: 83px;
+  aspect-ratio: 1;
+}
+.hero__text {
+  font-family: Inter, sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+.hero__call-to-action {
+  display: flex;
+}
+.hero__call-to-action :not(:last-child) {
+  margin-right: 15px;
 }
