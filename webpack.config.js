@@ -13,7 +13,7 @@ module.exports = {
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist'),
       assetModuleFilename: 'img/[hash][ext][query]',
-      clean: true,
+      // clean: true,
    },
    module: {
       rules: [
