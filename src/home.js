@@ -77,35 +77,6 @@ function homePageLoad(content) {
 
    content.appendChild(main);
 
-
-   // <main class="page">
-
-   // <section class="page__hero hero">
-
-   // <div class="hero__container">
-   // <div class="hero__row">
-   // <div class="hero__description">
-   // <h3 class="hero__pretitle pretitle">Healthy & Testy Food</h3>
-   // <h1 class="hero__title title">Enjoy Healthy Life
-   //    & Testy Food.</h1>
-   // <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   //    Varius sed pharetra dictum neque massa congue</p>
-   // <div class="hero__call-to-action">
-   // <a href="" class="hero__more btn btn--primary-color">Show more</a>
-   // <button class="hero__order btn btn--transparent-color">Place an order</button>
-   // </div >
-   //             </div >
-   //    // <div class="hero__image">
-   //    //    <img src="./img/hero-image.png" alt="">
-   //    // </div>
-   //          </div >
-   //    // <div class="hero__scrolldown scrolldown">
-   //    // <a href="" class="">Scrolldown</a>
-   //    </div >
-   //       </div >
-   //    </section >
-   // </main >
-
    return content;
 
 }

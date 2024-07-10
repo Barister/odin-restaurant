@@ -49,7 +49,14 @@ const App = {
    },
 
    loadPage: function (e) {
-      console.log('page Loaded!')
+      console.log('page Loaded!', e.currentTarget);
+      if (e.target.textContent === 'Home') {
+         homePageLoad(this.content);
+      } else if (e.target.textContent === 'Menu') {
+         menuPageLoad(this.content);
+      } else if (e.target.textContent === 'About') {
+         aboutPageLoad(this.content);
+      }
    }
 
 }
