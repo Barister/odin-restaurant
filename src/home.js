@@ -1,5 +1,10 @@
 function homePageLoad(content) {
 
+   const panelList = document.querySelector('.panel__list');
+   if (panelList.classList.contains('panel__list--invert')) {
+      panelList.classList.remove('panel__list--invert');
+   }
+
    const main = document.createElement('main');
    main.classList.add('page');
 
