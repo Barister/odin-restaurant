@@ -1,6 +1,4 @@
-function homePageLoad() {
-
-   const content = document.getElementById('content');
+function homePageLoad(content) {
 
    const main = document.createElement('main');
    main.classList.add('page');

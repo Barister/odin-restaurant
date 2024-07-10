@@ -62,12 +62,28 @@ body.scroll-lock {
   width: 100%;
   overflow-x: hidden;
 }
-.wrapper__background-image {
+.wrapper::after {
+  content: "";
   position: absolute;
   z-index: -1;
-  top: -100px;
-  left: clamp(35%, 12vw - 2rem, 50%);
+  top: -140px;
+  left: 48%;
+  background: url("../img/bg.png") no-repeat top left;
+  width: 100%;
+  height: 120%;
+  background-size: contain;
 }
+@media (max-width: 991.98px) {
+  .wrapper::after {
+    left: 60%;
+  }
+}
+@media (max-width: 479.98px) {
+  .wrapper::after {
+    left: 30%;
+  }
+}
+
 [class*=__container] {
   max-width: 1440px;
   padding-left: clamp(1rem, 6vw - 2rem, 6rem);
@@ -138,7 +154,7 @@ body.scroll-lock {
 }
 .scrolldown::after {
   content: "";
-  position: absolute;
+  position: relative;
   margin-top: 26px;
   left: 50%;
   height: 60px;
@@ -154,6 +170,8 @@ body.scroll-lock {
   padding: clamp(3rem, 6vw - 2rem, 6rem) 0px;
 }
 .header {
+  position: relative;
+  z-index: 5;
   /* .header__container */
   /* .header__logo */
   /* .header__menu */
@@ -201,7 +219,7 @@ body.scroll-lock {
   .header-page__panel {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
@@ -215,12 +233,6 @@ body.scroll-lock {
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-@media (max-width: 767.98px) {
-  .panel__item {
-    filter: invert(1);
-  }
-}
-
 .hero {
   /* .hero__background-image */
   /* .hero__container */
@@ -241,10 +253,17 @@ body.scroll-lock {
   row-gap: 20px;
 }
 .hero__row {
+  min-height: 400px;
   max-height: 75vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767.98px) {
+  .hero__row {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
 }
 .hero__pretitle {
   margin-bottom: 8px;
@@ -281,16 +300,35 @@ body.scroll-lock {
   flex: 1 0 auto;
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .hero__image {
+    flex: 1 1 auto;
+  }
+}
 .hero__image img {
   width: 100%;
   height: 100%;
+  min-height: 500px;
+  max-height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
 }
+@media (max-width: 767.98px) {
+  .hero__image img {
+    -o-object-position: unset;
+       object-position: unset;
+    min-height: unset;
+  }
+}
 .hero__scrolldown {
-  flex: 1 0 auto;
-  display: block;
+  flex: 0;
+  display: grid;
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .hero__scrolldown {
+    display: none;
+  }
 }
